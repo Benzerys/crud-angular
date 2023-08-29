@@ -1,0 +1,17 @@
+<div class="flex">
+  <button (click)="add()">Add</button>
+</div>
+<table>
+  <tr>
+    <td>department id</td>
+    <td>department code</td>
+    <td>department name</td>
+  </tr>
+  <tr *ngFor="let department of departments">
+    <td>{{ department.dpm_id }}</td>
+    <td>{{ department.dpm_cd }}</td>
+    <td>{{ department.dpm_name }}</td>
+    <td><button (click)="edit(department)">Edit</button></td>
+    <td><button (click)="delete()">Delete</button></td>
+  </tr>
+</table>
